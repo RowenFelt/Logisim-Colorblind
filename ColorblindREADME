@@ -1,0 +1,10 @@
+all colors are defined src/main/java/com/cburch/logisim/data/Value.java at line 234 
+
+The changes that worked best for me
+	nil is still gray
+	false is blue
+	true is yellow
+	unknown is green
+	error is red
+	width error is pink
+	multi_bit is black
