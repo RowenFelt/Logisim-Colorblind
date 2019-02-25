@@ -1,0 +1,24 @@
+preferences are found in src/main/resources/resources/logisim/en/prefs.properties
+
+layout options are specified in src/main/java/com/cburch/logisim/gui/prefs/LayoutOptions.java
+	added at line 55:
+					new PrefBoolean(AppPreferences.COLORBLIND_MODE,
+						Strings.getter("layoutColorblindMode")),
+app preferences are imported using import com.cburch.logisim.prefs.AppPreferences
+	at src/main/java/com/cburch/logisim/prefs/AppPreferences.java
+
+	added at line 54:
+		public static final PrefMonitor<Boolean> COLORBLIND_MODE = create(new PrefMonitorBoolean(
+	        "colorblindMode", false));
+
+PrefMonitor<Boolean> is defined in ./src/main/java/com/cburch/logisim/prefs/PrefMonitorBoolean.java
+	really we should be looking for PrefBoolean.java found at 
+		./src/main/java/com/cburch/logisim/gui/prefs/PrefBoolean.java
+
+Something useful:
+	printerView is found in src/main/java/com/cburch/logisim/gui/main/CanvasPainter.java:
+	may be as simple as doing:
+		boolean printerView = AppPreferences.PRINTER_VIEW.getBoolean(); in data
+
+	imported using import com.cburch.logisim.prefs.AppPreferences
+
