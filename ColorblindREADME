@@ -1,6 +1,7 @@
 all colors are defined src/main/java/com/cburch/logisim/data/Value.java at line 234 
 
-To change into colorblind mode, select preferences -> layout -> "Use colorblind color scheme"
+To change into colorblind mode, select preferences -> layout -> "Use colorblind color scheme".
+You must then reopen a project for the changes to take affect.
 
 The changes that worked best for me
 	nil is still gray
